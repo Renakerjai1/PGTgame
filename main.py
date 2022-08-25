@@ -1,16 +1,15 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
+def heart(name):
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    """
+    here is where the heart of the game will go. create the controller and view. pass the view to the controller and make the items 
+    inside of the controller. 
+    
+    objects needed: items, moves, pokemon
+    make trainers later
+    """
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    heart('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
