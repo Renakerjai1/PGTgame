@@ -6,6 +6,7 @@ class Moves:
         self.damage=damage
         self.type=type
         self.bonuseffects=bonuseffects
+        self.name=name
 
     def getdamage(self):
         return(self.damage)
@@ -15,3 +16,6 @@ class Moves:
 
     def getbonuseffects(self):
         return(self.bonuseffects)
+
+    def getname(self):
+        return(self.name)
