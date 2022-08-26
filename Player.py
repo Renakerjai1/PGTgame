@@ -8,6 +8,7 @@ class Player:
         self.pokemonTeam=[]
         self.itemBag=[]
         self.pokeBank=[]
+        self.currentpokemon#= pokemon(null)
 
 
     def catch(self, pokemon):
@@ -19,6 +20,7 @@ class Player:
         if len(self.pokemonTeam)>5:
             self.pokeBank.append(self.pokemonTeam[5])
             self.pokemonTeam.pop(5)
+            print("{} was added to the bank")# finish
         else:
             self.pokemonTeam.append(pokemon)
         return "{} has been added to the party".format(pokemon.getname())
@@ -28,7 +30,19 @@ class Player:
         self.itemBag.pop(index-1)
     def getItemBag(self):
         return self.itemBag
+    def releasePokemon(self):
+        """
+        print all available pokemon in party and take an input for what pokemon they want released, then a y/n check to make sure. if n
+        cancel the action.
+        :return:
+        """
+        for()
 
+    def setcurrentpokemon(self,index):
+        self.currentpokemon=self.pokemonTeam.index(index)
+
+    def getcurrentpokemon(self):
+        return self.currentpokemon
 
 
 

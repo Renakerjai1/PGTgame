@@ -1,4 +1,4 @@
-
+import Controller,Player
 
 def heart(name):
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
@@ -9,6 +9,11 @@ def heart(name):
     objects needed: items, moves, pokemon
     make trainers later
     """
+    Ash=Player("player")
+    #gameview=view
+    gameController=Controller(1,Ash)
+    gameController.explore()
+
 
 if __name__ == '__main__':
     heart('PyCharm')
